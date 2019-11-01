@@ -1,0 +1,236 @@
+package com.example.tests;
+
+import java.util.regex.Pattern;
+import java.util.concurrent.TimeUnit;
+import org.testng.annotations.*;
+import static org.testng.Assert.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Pruebas {
+  private WebDriver driver;
+  private String baseUrl;
+  private boolean acceptNextAlert = true;
+  private StringBuffer verificationErrors = new StringBuffer();
+
+  @BeforeClass(alwaysRun = true)
+  public void setUp() throws Exception {
+    driver = new FirefoxDriver();
+    baseUrl = "https://www.katalon.com/";
+    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+  }
+
+  @Test
+  public void testPruebas() throws Exception {
+    driver.get("https://www.choucairtesting.com/empleos-2/");
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("a");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("q");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("w");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("e");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("r");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("search_location")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("w");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("e");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("t");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("y");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("u");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("i");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("o");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("p");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("a");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("s");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("d");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("f");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("g");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("h");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("j");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("k");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("l");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("z");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("x");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("c");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Buscar:'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("v");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("b");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("n");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys(",");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("ñ");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("search_keywords")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("q");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("afsfasf");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("a");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("|");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("ñ");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    // ERROR: Caught exception [ERROR: Unsupported command [dragAndDropToObject | id=search_location | id=search_keywords]]
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("");
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("ñ");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("´{");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.id("content")).click();
+    driver.findElement(By.id("search_keywords")).clear();
+    driver.findElement(By.id("search_keywords")).sendKeys("1");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='EMPLEOS DISPONIBLES'])[1]/following::div[5]")).click();
+    driver.findElement(By.id("search_location")).clear();
+    driver.findElement(By.id("search_location")).sendKeys("2");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Ubicación'])[1]/following::input[2]")).click();
+  }
+
+  @AfterClass(alwaysRun = true)
+  public void tearDown() throws Exception {
+    driver.quit();
+    String verificationErrorString = verificationErrors.toString();
+    if (!"".equals(verificationErrorString)) {
+      fail(verificationErrorString);
+    }
+  }
+
+  private boolean isElementPresent(By by) {
+    try {
+      driver.findElement(by);
+      return true;
+    } catch (NoSuchElementException e) {
+      return false;
+    }
+  }
+
+  private boolean isAlertPresent() {
+    try {
+      driver.switchTo().alert();
+      return true;
+    } catch (NoAlertPresentException e) {
+      return false;
+    }
+  }
+
+  private String closeAlertAndGetItsText() {
+    try {
+      Alert alert = driver.switchTo().alert();
+      String alertText = alert.getText();
+      if (acceptNextAlert) {
+        alert.accept();
+      } else {
+        alert.dismiss();
+      }
+      return alertText;
+    } finally {
+      acceptNextAlert = true;
+    }
+  }
+}
